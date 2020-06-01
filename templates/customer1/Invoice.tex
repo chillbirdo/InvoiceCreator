@@ -1,0 +1,40 @@
+\input{preamble}
+\input{myinfo}
+
+\newcommand{\subtotal}{EUR {{ mustache_subtotal }} }
+\newcommand{\taxes}{EUR {{ mustache_taxes }}}
+%\newcommand{\paymentsreceived}{EUR 0}
+\newcommand{\total}{EUR {{ mustache_total }} }
+\newcommand{\lastdayoflastmonth}{ {{ mustache_date }} }
+\newcommand{\timeperiodfromto}{ {{ mustache_time_period_from_to }} }
+\newcommand{\clientaddress}{
+CustomerONE GmbH\par
+Customer Street 26\par
+A-1234 Sometown\par
+ATU234328702
+}
+
+\newcommand{\invoicenumber}{ {{ mustache_invoice_id }} }
+
+\begin{document}
+\addheader
+\addcontactblock
+\hr
+
+\color{black}
+
+\centering
+\begin{tabularx}{\linewidth}{@{}Y r r r@{}}
+	\addtableheader
+	
+	
+\addtask{Task}{Software-Development}{EUR {{ mustache_rate }}/hr}{ {{ mustache_hours }} }{EUR {{ mustache_hours }} }
+
+\end{tabularx}
+
+%\additionalnotes{Note number 1\par
+%	 Note number 2\par Note number 3}
+
+\addbottomtable
+\addfooter
+\end{document}
