@@ -1,14 +1,14 @@
 # Invoice Creator
 
-This is a handy tool for creating invoices, especially when you are a freelancer. Use a different latex-template for each of your customers.
+This is a handy tool for creating invoices, especially when you are a freelancer and working on an hourly bases. Use a different latex-template for each of your customers and create beautiful looking invoices in a bliss!
 
 
 ## installation and execution
 
 
-install:
+install on Debian:
 ```
-sudo apt install pdflatex texlive-latex-extra python3-virtualenv
+sudo apt install texlive-latex-base texlive-latex-extra python3-virtualenv
 chmod +x install.sh
 ./install.sh 
 ```
@@ -21,3 +21,4 @@ chmod +x run.sh
 
 
 # InvoiceCreator
+![alt text](https://github.com/chillbirdo/ImageCreator/blob/master/image.jpg?raw=true)

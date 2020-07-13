@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-virtualenv venv
-source "./venv/bin/activate"
+python3 -m venv env
+source "./env/bin/activate"
 
 pip install chevron
 pip install simple-term-menu

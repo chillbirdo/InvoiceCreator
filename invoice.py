@@ -88,7 +88,7 @@ def main():
             w.write(result)
 
     # create file and clean up
-    subprocess.call(["pdflatex", "-output-directory", "../../" + result_dir, mustache_invoice_id], cwd=chosen_template_dir)
+    subprocess.call(["pdflatex", "-output-directory", "../../" + result_dir, mustache_invoice_id], cwd=chosen_template_dir, stdout=open(os.devnull, 'wb'))
     os.remove(rendered_template_file)
     os.remove(rendered_template_file + ".out")
     os.remove(rendered_template_file + ".log")

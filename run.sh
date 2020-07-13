@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-source "./venv/bin/activate"
+source "./env/bin/activate"
 
-python invoice.py "$@"
+python3 invoice.py "$@"
 
 deactivate
