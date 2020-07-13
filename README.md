@@ -21,4 +21,4 @@ chmod +x run.sh
 
 
 # InvoiceCreator
-![alt text](https://github.com/chillbirdo/ImageCreator/blob/master/image.jpg?raw=true)
+![alt text](https://github.com/chillbirdo/InvoiceCreator/blob/master/image.jpg?raw=true)
