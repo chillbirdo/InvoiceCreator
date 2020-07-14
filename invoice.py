@@ -62,7 +62,7 @@ def main():
     mustache_taxes = mustache_subtotal / 5
     mustache_total = mustache_subtotal + mustache_taxes
     mustache_date = last_day_of_the_month_date.strftime("%d.%m.%Y")
-    mustache_time_period_from_to = "from " + first_day_of_the_month_date.strftime("%d.%m.%Y") + " to " + last_day_of_the_month_date.strftime("%d.%m.%Y");
+    mustache_time_period_from_to = first_day_of_the_month_date.strftime("%d.%m.%Y") + " - " + last_day_of_the_month_date.strftime("%d.%m.%Y");
     mustache_invoice_id = last_day_of_the_month_date.strftime("%Y%m%d") + "-" + templates[input_customer_template]
     print(mustache_invoice_id)
     mustache_rate = input_hourly_rate
