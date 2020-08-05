@@ -26,5 +26,5 @@ chmod +x run.sh
 
 
 ## create your invoice in seconds
-![alt text](https://github.com/chillbirdo/InvoiceCreator/blob/master/render1596664328928.gif?raw=true)
+![alt text](https://github.com/chillbirdo/InvoiceCreator/blob/master/demo.gif?raw=true)
 ![alt text](https://github.com/chillbirdo/InvoiceCreator/blob/master/image.jpg?raw=true)
