@@ -1,6 +1,8 @@
 # Invoice Creator
 
-This is a handy tool for creating invoices, especially when you are a freelancer and working on an hourly bases. Use a different latex-template for each of your customers and create beautiful looking invoices in seconds!
+Tired of writing your Invoices? Manually adding invoice number, date, hours and calculating price and tax can become a boring task.
+
+This is a handy tool for creating invoices, it suites especially freelancers who get paid on a hourly bases. Use a different latex-template for each of your customers and create beautiful looking invoices in seconds!
 
 
 ## installation and execution
@@ -28,3 +30,4 @@ chmod +x run.sh
 ## create your invoice in seconds
 ![alt text](https://github.com/chillbirdo/InvoiceCreator/blob/master/demo.gif?raw=true)
 ![alt text](https://github.com/chillbirdo/InvoiceCreator/blob/master/image.jpg?raw=true)
+
