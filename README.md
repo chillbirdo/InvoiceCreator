@@ -7,11 +7,6 @@ This is a handy tool for creating invoices, it suites especially freelancers who
 
 ## installation and execution
 
-todo:
-- code in einzelne funktionen unterteilen
-- fertig installiertes paket zum downloaden, vielleicht mit kleiner page auf meiner website
-
-
 install on Debian:
 ```
 sudo apt install texlive-latex-base texlive-latex-extra python3-virtualenv
