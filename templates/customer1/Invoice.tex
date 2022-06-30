@@ -3,6 +3,7 @@
 
 \newcommand{\subtotal}{EUR {{ mustache_subtotal }} }
 \newcommand{\taxes}{EUR {{ mustache_taxes }}}
+\newcommand{\travelcosts}{EUR {{ mustache_travel_costs }}}
 %\newcommand{\paymentsreceived}{EUR 0}
 \newcommand{\total}{EUR {{ mustache_total }} }
 \newcommand{\lastdayoflastmonth}{ {{ mustache_date }} }
@@ -26,8 +27,8 @@ ATU234328702
 \centering
 \begin{tabularx}{\linewidth}{@{}Y r r r@{}}
 	\addtableheader
-	
-	
+
+
 \addtask{ProjektXY}{Software-Development}{EUR {{ mustache_rate }}/hr}{ {{ mustache_hours }} }{EUR {{ mustache_subtotal }} }
 
 \end{tabularx}

@@ -57,9 +57,29 @@ def main():
         print("Hourly rate must be an integer or float value. Exiting.");
         exit(-1);
 
+    # enter VAT percentage
+    input_vat_percentage = input("Enter how much VAT should be added in percent % (0 for reverse charge): ")
+    try:
+        input_vat_percentage = float(input_vat_percentage)
+    except ValueError:
+        print("VAT percentage must be an integer or float value. Exiting.");
+        exit(-1);
+
+
+    # enter traveling costs
+    input_travel_costs = input("Enter how much traveling costs you had that month: ")
+    try:
+        input_travel_costs = float(input_travel_costs)
+    except ValueError:
+        print("traveling costs must be an integer or float value. Exiting.");
+        exit(-1);
+
+
+
     # # CALCULATIONS
     mustache_subtotal = input_hourly_rate * input_hours_worked
-    mustache_taxes = mustache_subtotal / 5
+    mustache_taxes = mustache_subtotal * (input_vat_percentage / 100)
+    mustache_travel_costs = input_travel_costs
     mustache_total = mustache_subtotal + mustache_taxes
     mustache_date = last_day_of_the_month_date.strftime("%d.%m.%Y")
     mustache_time_period_from_to = first_day_of_the_month_date.strftime("%d.%m.%Y") + " - " + last_day_of_the_month_date.strftime("%d.%m.%Y");
@@ -78,6 +98,7 @@ def main():
         result = chevron.render(f, {
                                 'mustache_subtotal': str(mustache_subtotal),
                                 'mustache_taxes': str(mustache_taxes),
+                                'mustache_travel_costs': str(mustache_travel_costs),
                                 'mustache_total': str(mustache_total),
                                 'mustache_date': str(mustache_date),
                                 'mustache_time_period_from_to': str(mustache_time_period_from_to),
