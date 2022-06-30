@@ -15,14 +15,6 @@ def main():
     terminal_menu = TerminalMenu(templates)
     input_customer_template = terminal_menu.show()
 
-    # enter hourly rate
-    input_hourly_rate = input("Enter hourly rate at " + templates[input_customer_template] + ": ")
-    try:
-        input_hourly_rate = float(input_hourly_rate)
-    except ValueError:
-        print("Hourly rate must be an integer or float value. Exiting.");
-        exit(-1);
-
     # choose month
     date_options = ["last month", "actual month", "january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "november", "december"];
     terminal_menu = TerminalMenu(date_options)
@@ -49,6 +41,15 @@ def main():
     first_day_of_the_month_date = datetime.datetime(year, month, 1, 12, 00, 00)
     last_day_of_the_month_date = datetime.datetime(year, month, calendar.monthrange(year, month)[1], 12, 00, 00)
 
+
+    # enter hourly rate
+    input_hourly_rate = input("Enter hourly rate at " + templates[input_customer_template] + ": ")
+    try:
+        input_hourly_rate = float(input_hourly_rate)
+    except ValueError:
+        print("Hourly rate must be an integer or float value. Exiting.");
+        exit(-1);
+
     # enter hours worked
     input_hours_worked = input("How many hours did you work for " + templates[input_customer_template] + " in " + last_day_of_the_month_date.strftime("%b %Y") + "?: ")
     try:
@@ -73,7 +74,6 @@ def main():
     except ValueError:
         print("traveling costs must be an integer or float value. Exiting.");
         exit(-1);
-
 
 
     # # CALCULATIONS
