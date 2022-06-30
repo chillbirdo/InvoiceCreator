@@ -80,7 +80,7 @@ def main():
     mustache_subtotal = input_hourly_rate * input_hours_worked
     mustache_taxes = mustache_subtotal * (input_vat_percentage / 100)
     mustache_travel_costs = input_travel_costs
-    mustache_total = mustache_subtotal + mustache_taxes
+    mustache_total = mustache_subtotal + mustache_travel_costs + mustache_taxes
     mustache_date = last_day_of_the_month_date.strftime("%d.%m.%Y")
     mustache_time_period_from_to = first_day_of_the_month_date.strftime("%d.%m.%Y") + " - " + last_day_of_the_month_date.strftime("%d.%m.%Y");
     mustache_invoice_id = last_day_of_the_month_date.strftime("%Y%m%d") + "-" + templates[input_customer_template]
